@@ -1,4 +1,12 @@
-var tab_title, tab_url;
+var tab_title, tab_url, notes_value;
+
+console.log("here");
+window.addEventListener('load', function load(event){
+  document.getElementById('submit').onClick = function(){
+    notes_value = document.getElementById('notes');
+    console.log("typing: "+notes_value);
+  }
+})
 
 //Get all the current active tabs in the window
 var tab_query = { active : true, currentWindow: true };
@@ -15,7 +23,6 @@ function callback(tabs){
 
 function popup_title(title){
   //Set the title in the pop-up
-  console.log("trying to update: " + title);
   document.getElementById("title").innerHTML = title;
 }
 

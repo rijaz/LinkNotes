@@ -12,6 +12,7 @@ h2{
 
 .notes_input{
   height: 50px;
+  text-decoration: none;
 }
 
 .buttons{
@@ -26,6 +27,7 @@ h2{
   text-align: center;
   display: inline-block;
   font-size: 14px;
-  padding: 5px 5px;
+  font-weight: bold;
+  padding: 5px 5px 5px 5px;
   margin-right: 10px;
 }
