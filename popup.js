@@ -1,12 +1,14 @@
 var tab_title, tab_url, notes_value;
 
-console.log("here");
+console.log("i am working mf")
+
 window.addEventListener('load', function load(event){
-  document.getElementById('submit').onClick = function(){
-    notes_value = document.getElementById('notes');
-    console.log("typing: "+notes_value);
-  }
-})
+  chrome.tabs.query(tab_query, callback);
+  document.getElementById('send').onclick = function(){
+    notes_value = document.getElementById('notes').value;
+    console.log("you typed in: ", notes_value);
+  };
+});
 
 //Get all the current active tabs in the window
 var tab_query = { active : true, currentWindow: true };
@@ -27,4 +29,4 @@ function popup_title(title){
 }
 
 //Gets all the tabs with the specified properties in tab_query
-chrome.tabs.query(tab_query, callback);
+//chrome.tabs.query(tab_query, callback);
