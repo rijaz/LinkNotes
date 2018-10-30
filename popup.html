@@ -5,17 +5,16 @@
       <script src="popup.js"></script>
     </head>
     <body>
-      <!-- <span id="ext_info">
-        <span id="ext_name">LinkSave</span>
-        <span id="ext_desc">Save links with notes!</span>
-      </span> -->
-      <h1 id="title"></h1>
+      <h1>Link Notes</h1>
 
-      <h2>Notes</h2>
-      <textarea id="notes" class="notes_input"></textarea>
-      <div class="buttons">
-        <input type="submit" class="div_button" id="send">
-        <button class="div_button" id="view">View All</button>
+      <!--Create the div for the list of tasks but not the HTML b/c the HTML is dynamic and depends on the tasks pulled-->
+      <div id="tasksList">
       </div>
     </body>
+
+    <footer>
+      
+      <input type="image" src="home.png" alt="Home" class="nav-icon" id="checked"/>
+      <input type="image" src="add.png" alt="Add" class="nav-icon" id="add"/>
+    </footer>
   </html>
