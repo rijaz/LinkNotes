@@ -59,7 +59,7 @@ function retrieveLinks(){
         
   
         tasksList.innerHTML += '<div class="row">'+
-                              '<label class="container"><h2 class="title">' + name + '</h2>'+
+                              '<label class="container"><a href="'+ url +'" target="_blank"><h2 class="title">' + name + '</h2></a>'+
                               '<p>' + notes + '</p><input type="checkbox" name="link_check" id="'+url+'"><span class="checkmark"></span></label>' +
                               '</div>';
       

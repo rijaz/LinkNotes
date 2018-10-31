@@ -26,9 +26,12 @@ h1{
   font-size: 18px;
 }
 
+
+
 p{
   font-size: 14px;
 }
+
 
 /* Customize the label (the container) */
 .container {
@@ -68,14 +71,18 @@ p{
   background-color: #ccc;
 }
 
-/* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: black;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+  }
+
+
 .del_btn{
   text-align: center;
-  outline: 0;
 }
 
 input[type="submit"]{
@@ -89,6 +96,7 @@ input[type="submit"]{
   font-weight:600;
   text-transform: uppercase;
   align-items: center;
+  outline: 0;
 }
 
 input[type="submit"]:hover{

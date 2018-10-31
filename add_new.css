@@ -17,7 +17,6 @@ h1{
 
 .add_btn{
   text-align: center;
-  outline: 0;
 }
 
 input[type="submit"]{
@@ -31,6 +30,7 @@ input[type="submit"]{
   font-weight:600;
   text-transform: uppercase;
   align-items: center;
+  outline: 0;
 }
 
 input[type="submit"]:hover{
