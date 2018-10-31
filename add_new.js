@@ -38,6 +38,8 @@ function save(){
   console.log("Tab URL: "+ tab_url);
   console.log("Notes: ", tab_notes);
 
+  document.getElementById('notes').value = "";
+
   var values = [tab_title, tab_notes];
 
   var new_obj = {}

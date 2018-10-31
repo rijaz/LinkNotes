@@ -55,15 +55,12 @@ function retrieveLinks(){
         var notes = items[key][1];
         console.log("url key: " + key + " and values are title: " + items[key][0] +" and notes "+ items[key][1]);
         
+
+        
   
         tasksList.innerHTML += '<div class="row">'+
-                              '<div class="row_left">'+
-                              '<h2 class="title">' + name + '</h2>'+
-                              '<p>' + notes + '</p>' +
-                              '</div>' +
-                              '<div class="row_right">' +
-                              '<input type="checkbox" name="link_check" id="'+url+'">'+
-                              '</div>' +
+                              '<label class="container"><h2 class="title">' + name + '</h2>'+
+                              '<p>' + notes + '</p><input type="checkbox" name="link_check" id="'+url+'"><span class="checkmark"></span></label>' +
                               '</div>';
       
       }
